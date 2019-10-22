@@ -6,8 +6,12 @@ package com.spartaglobal.rabbit_explosion;
  */
 public class App 
 {
+
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        GlobalTimer globalTimer = new GlobalTimer(20);
+
+
+
     }
 }
