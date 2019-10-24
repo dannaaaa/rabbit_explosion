@@ -7,6 +7,7 @@ public class Rabbit implements IRabbit {
     private boolean mature;
     private boolean alive;
     private int age;
+    private int timeOfBirth;
 
 
     @Override
@@ -40,5 +41,15 @@ public class Rabbit implements IRabbit {
     public void setAge(int age) {
         this.age = age;
 
+    }
+
+    @Override
+    public int getTimeOfBirth() {
+        return timeOfBirth;
+    }
+
+    @Override
+    public void setTimeOfBirth(int timeOfBirth) {
+        this.timeOfBirth = timeOfBirth;
     }
 }

@@ -5,6 +5,7 @@ import java.util.Timer;
 public class FemaleRabbit extends Rabbit implements IFemaleRabbit {
 
     private boolean pregnant;
+    private int timeOfBirth;
 
 
     @Override
@@ -26,6 +27,17 @@ public class FemaleRabbit extends Rabbit implements IFemaleRabbit {
     @Override
     public int getGiveBirth(int giveBirth) {
         return 0;
+    }
+
+    @Override
+    public int getTimeOfBirth() {
+        return this.timeOfBirth;
+    }
+
+    @Override
+    public void setTimeOfBirth(int timeOfBirth) {
+        this.timeOfBirth = timeOfBirth;
+
     }
 }
 

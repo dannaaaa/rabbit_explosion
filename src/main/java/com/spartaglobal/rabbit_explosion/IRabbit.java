@@ -9,5 +9,7 @@ public interface IRabbit  {
     int getAge();
     void setAge(int age);
 
+    int getTimeOfBirth();
+    void setTimeOfBirth(int timeOfBirth);
 
 }

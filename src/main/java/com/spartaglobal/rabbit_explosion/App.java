@@ -11,16 +11,14 @@ public class App
     public static void main( String[] args )
     {
 
+//        RabbitCreator rabbitCreator = new RabbitCreator();
+//        rabbitCreator.addFemaleRabbit();
+//        rabbitCreator.femalePrintRabbit();
+//        rabbitCreator.addMaleRabbit();
+//        rabbitCreator.malePrintRabbit();
 
-        MaleRabbitCreator maleRabbitCreator = new MaleRabbitCreator();
-        maleRabbitCreator.addRabbit();
-        maleRabbitCreator.malePrintRabbit();
-
-        FemaleRabbitCreator femaleRabbit = new FemaleRabbitCreator();
-        femaleRabbit.addRabbit();
-        femaleRabbit.femalePrintRabbit();
-
-        RabbitSimulator rabbitSimulator = new RabbitSimulator();
+        LifeSpanManager lifeSpanManager = new LifeSpanManager();
+        lifeSpanManager.Life();
 
 
     }
