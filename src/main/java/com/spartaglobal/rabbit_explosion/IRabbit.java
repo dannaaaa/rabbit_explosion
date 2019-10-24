@@ -1,11 +1,13 @@
 package com.spartaglobal.rabbit_explosion;
 
-public interface IRabbit {
+public interface IRabbit  {
 
     boolean getMature();
     void setMature(boolean mature);
     boolean getAlive();
-    void getAlive(boolean alive);
-    String gender();
+    void setAlive(boolean alive);
+    int getAge();
+    void setAge(int age);
+
 
 }

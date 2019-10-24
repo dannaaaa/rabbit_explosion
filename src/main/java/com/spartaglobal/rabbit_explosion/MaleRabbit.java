@@ -1,17 +1,14 @@
 package com.spartaglobal.rabbit_explosion;
 
-import java.util.ArrayList;
-
-public class Rabbit implements IRabbit {
+public class MaleRabbit implements IRabbit  {
 
     private boolean mature;
     private boolean alive;
     private int age;
 
-
     @Override
     public boolean getMature() {
-        return this.mature;
+        return mature;
     }
 
     @Override
@@ -22,7 +19,7 @@ public class Rabbit implements IRabbit {
 
     @Override
     public boolean getAlive() {
-        return this.alive;
+        return alive;
     }
 
     @Override
