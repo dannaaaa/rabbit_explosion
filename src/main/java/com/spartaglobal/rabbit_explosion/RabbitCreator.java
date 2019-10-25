@@ -7,8 +7,10 @@ public class RabbitCreator {
 
     //male generator
     private List<IRabbit> maleRabbitList = new ArrayList<>();
+    private FemaleRabbitGenerator femaleRabbitGenerator = new FemaleRabbitGenerator();
     private RabbitGenerator rabbitGenerator = new RabbitGenerator();
     private LifeSpanManager lifeSpanManager = new LifeSpanManager();
+
     public void addMaleRabbit() {
         maleRabbitList.add(rabbitGenerator.createRabbit(0, false, true, lifeSpanManager.month));
     }
@@ -29,10 +31,10 @@ public class RabbitCreator {
 //    }
 
     //female generator
-
+//
 //    private List<IFemaleRabbit> femaleRabbitList = new ArrayList<>();
 //    public void addFemaleRabbit() {
-//        femaleRabbitList.add(rabbitGenerator.createRabbit(0,false, true, lifeSpanManager.month));
+//        femaleRabbitList.add(femalerabbitGenerator.createRabbit(0,false, true, lifeSpanManager.month));
 //    }
 //
 //    public List<IFemaleRabbit> getFemaleRabbitList(){

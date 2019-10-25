@@ -2,7 +2,7 @@ package com.spartaglobal.rabbit_explosion;
 
 import java.util.ArrayList;
 
-public class Rabbit implements IRabbit {
+public class Rabbit implements IRabbit  {
 
     private boolean mature;
     private boolean alive;
@@ -50,6 +50,7 @@ public class Rabbit implements IRabbit {
 
     @Override
     public void setTimeOfBirth(int timeOfBirth) {
+
         this.timeOfBirth = timeOfBirth;
     }
 }

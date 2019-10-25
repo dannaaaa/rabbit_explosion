@@ -10,10 +10,10 @@ public class SetMaleRabbitMaturity {
                 maleRabbitList.get(i).setMature(true);
                 System.out.println("Maturity is: " + maleRabbitList.get(i).getMature());
             }
-
-
         }
 
         return maleRabbitList;
     }
+
+
 }

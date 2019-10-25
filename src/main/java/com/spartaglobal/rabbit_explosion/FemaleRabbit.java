@@ -6,6 +6,54 @@ public class FemaleRabbit extends Rabbit implements IFemaleRabbit {
 
     private boolean pregnant;
     private int timeOfBirth;
+    private boolean mature;
+    private boolean alive;
+    private int age;
+    private int giveBirth;
+
+
+    @Override
+    public boolean getMature() {
+        return this.mature;
+    }
+
+    @Override
+    public void setMature(boolean mature) {
+        this.mature = mature;
+
+    }
+
+    @Override
+    public boolean getAlive() {
+        return this.alive;
+    }
+
+    @Override
+    public void setAlive(boolean alive) {
+        this.alive = alive;
+    }
+
+    @Override
+    public int getAge() {
+        return this.age;
+    }
+
+    @Override
+    public void setAge(int age) {
+        this.age = age;
+
+    }
+    @Override
+    public int getTimeOfBirth() {
+        return timeOfBirth;
+    }
+
+    @Override
+    public void setTimeOfBirth(int timeOfBirth) {
+        this.timeOfBirth = timeOfBirth;
+    }
+
+
 
 
     @Override
@@ -21,23 +69,15 @@ public class FemaleRabbit extends Rabbit implements IFemaleRabbit {
 
     @Override
     public void setGiveBirth() {
+        this.giveBirth = giveBirth;
 
     }
 
     @Override
-    public int getGiveBirth(int giveBirth) {
-        return 0;
+    public int getGiveBirth(int giveBirth)
+    {
+        return this.giveBirth;
     }
 
-    @Override
-    public int getTimeOfBirth() {
-        return this.timeOfBirth;
     }
-
-    @Override
-    public void setTimeOfBirth(int timeOfBirth) {
-        this.timeOfBirth = timeOfBirth;
-
-    }
-}
 
